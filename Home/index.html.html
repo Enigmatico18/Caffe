@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Pictures/Logo.png">
+    <title>Caffé Raffiné</title>
+    <link rel="stylesheet" href="/Home/Caffe_Raffiné.css">
+    <script src="Caffé_Raffiné.js"></script>
+</head>
+<body>
+
+    <nav class="enlaces_nav">
+    <a href="#home" class="menu-item">Home</a>
+    <a href="#recipes" class="menu-item">Recipes</a>
+    <a href="#about" class="menu-item">About Us</a>
+    <a href="#contact" class="menu-item">Contact</a>
+    </nav>
+
+    <div class="navegacion"></div>
+    <img src="/Pictures/Logo.png" alt="" class="img_logo">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Searchs"></a>
+    </div>
+    
+<section id="home">
+        <div class="introductorio">
+            <h1 class="title">Caffé Raffiné</h1>
+            <h2 class="lema">Siente el amor y la dedicación en cada preparación</h2>
+            <p class="text_intro">En días ocupados, una pausa con café es reconfortante. Así que, cuando te sientas abrumado, tómate un     momento para disfrutar de una taza y recargar tus sentidos.</p>
+        </div>
+        <div class="imagen_inicio"></div>
+</section>
+
+<section class="recipes">
+        <div id="recipes"></div>
+        <h2 class="recetas">Recipes</h2>
+        <div class="container">
+            <div class="lineas"></div>
+            <div class="lineas"></div>
+        </div>
+        <div class="recetas_pag2">
+            <a href="#recipes" class="coffe" onclick="showHot()">Hot Coffee</a>
+            <a href="#recipes" class="cold" onclick="showCold()">Cold Brew</a>
+            <a href="#recipes" class="panqueques" onclick="showPancakes()">Pancakes</a>
+            <a href="#recipes" class="wafles" onclick="showWaffles()">Waffles</a>
+        </div>
+        
+        <div class="hot">
+            <div id="hot_caffe_espresso" class="hot-item"></div>
+            <div id="hot_caffe_americano" class="hot-item"></div>
+            <div id="hot_caffe_cappuccino" class="hot-item"></div>
+        </div>
+
+        <div class="cold">
+            <div id="iced_coffee" class="cold-item"></div>
+            <div id="frappuccino" class="cold-item"></div>
+            <div id="iced_mocha" class="cold-item"></div>
+        </div>
+
+        <div class="pancakes">
+            <div id="chocolate_Pancakes" class="pancake-item"></div>
+            <div id="pancakes_milk" class="pancake-item"></div>
+            <div id="Caramelized_Pancakes" class="pancake-item"></div>
+        </div>
+
+        <div class="wafles">
+            <div id="wafle_chocolate" class="waffle-item"></div>
+            <div id="wafle_manzana" class="waffle-item"></div>
+            <div id="wafle_cafe" class="waffle-item"></div>
+        </div>
+</section>
+    <div id="about"></div>
+    <h2 class="quienes">About Us</h2>
+        <div class="container_about">
+            <div class="lineas_about"></div>
+                <div class="lineas_about"></div>
+            <div class="about_section">
+                <p>Welcome to Caffé Raffiné!</p>
+                
+                <p>We are a café dedicated to offering an authentic coffeehouse experience, where our customers can enjoy a wide selection of classic and specialty beverages, both hot and cold. From a perfectly brewed espresso to a refreshing iced coffee or an indulgent cappuccino, our drinks are crafted with care and passion to satisfy even the most discerning palates.</p>
+                
+                <p>Our mission at Caffé Raffiné goes beyond just serving coffee. We strive to create a welcoming and vibrant atmosphere where the community can gather, enjoy good company, and make lasting memories. We believe in the importance of providing exceptional service and a warm atmosphere that makes every visit special. Whether you're looking for a quiet spot to work or meeting up with friends for a chat, our café is the perfect place to unwind and enjoy a moment of calm amidst the daily hustle and bustle.</p>
+                
+                <p>In addition to our drinks, we also offer a variety of breakfast options and fresh pastries, all prepared with love and care to complement our customers' experience in our café. From delicious pancakes to freshly baked croissants, every bite is designed to delight your taste buds and leave you craving more.</p>
+                
+                <p>Thank you for choosing Caffé Raffiné as your destination for quality beverages and a welcoming atmosphere. We look forward to seeing you soon and becoming a part of your daily routine.</p>
+            </div>                      
+<section>
+
+
+<section class="contact">
+    <div id="contact"></div>
+
+
+</section>
+
+<script>
+    // JavaScript para el desplazamiento suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>   
+
+</body>
+</html>

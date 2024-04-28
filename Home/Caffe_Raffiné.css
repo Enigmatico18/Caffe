@@ -1,0 +1,419 @@
+body {
+    background-color: rgb(46, 24, 24);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.navegacion{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(102, 66, 50);
+    position: fixed;
+    z-index: 1;
+}
+
+#search-input {
+    top: 3.5%;
+    margin-left: 20px;
+    color: white;
+    background: none;
+    position: fixed;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    width: 200px;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.enlaces_nav {
+    position: fixed;
+    z-index: 12;
+    font-size: 160%;
+    left: 68%;
+    top: 4%;
+}
+
+.enlaces_nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+}
+
+.enlaces_nav a::before,
+.enlaces_nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent;
+    bottom: -5px;
+    transition: background-color 0.8s ease;
+}
+
+.enlaces_nav a::before {
+    top: -5px;
+}
+
+.enlaces_nav a:hover::before {
+    background-color: white;
+}
+
+.enlaces_nav a:hover::after {
+    background-color: white;
+}
+
+.img_logo {
+    width: 13%;
+    margin: 0;
+    position: fixed;
+    left: 40%;
+    top: -4.7%;
+    z-index: 1;
+}
+
+.lema{
+    color: rgba(255, 255, 255, 0.475);
+    top: 37.5%;
+    left: 4.5%;
+}
+
+.introductorio{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 450%;
+    top: 31%;
+    margin: 0;
+    letter-spacing: 8px;
+    font-weight: 100;
+}
+
+.text_intro{
+    
+    color: rgb(235, 235, 235);
+    display: block;
+    font-size: 150%;
+    background: none;
+    text-align: center;
+    width: 40%;
+    top: 41%;
+    left: 4%;
+}
+
+.imagen_inicio{
+    position: absolute;
+    margin: 0;
+    width: 40%;
+    height: 80%;
+    background-color: grey;
+    border-radius: 50%;
+    left: 55%;
+    top: 15%;
+    opacity: 40%;
+}
+
+#recipes{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 18, 18);
+    margin: 0;
+    top: 100%;
+}
+
+.recetas{
+    position: absolute;
+    top: 108%;
+    width: 100%;
+    left: 40%;
+    font-size: 350%;
+}
+
+.lineas {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+
+.lineas:nth-child(1) {
+    top: 113.5%;
+}
+
+.lineas:nth-child(2) {
+    top: 122.8%;
+}
+
+.recetas_pag2 {
+    position: absolute;
+    top: 136%;
+    margin-left: 2%;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recetas_pag2 a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+#hot_caffe_espresso{
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 25%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#hot_caffe_americano{
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#hot_caffe_cappuccino{
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 75%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#hot_caffe_espresso:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
+
+#hot_caffe_americano:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
+
+#hot_caffe_cappuccino:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease;
+}
+
+#hot_caffe_espresso,
+#hot_caffe_americano,
+#hot_caffe_cappuccino {
+    width: 20%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.107);
+    position: absolute;
+    top: 135%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#hot_caffe_espresso:hover,
+#hot_caffe_americano:hover,
+#hot_caffe_cappuccino:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+#iced_coffee {
+    width: 20%;
+    height: 50%;
+    background-color: blue; /* Color azul */
+    position: absolute;
+    top: 135%;
+    left: 25%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#frappuccino {
+    width: 20%;
+    height: 50%;
+    background-color: blue; /* Color azul */
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#iced_mocha {
+    width: 20%;
+    height: 50%;
+    background-color: rgb(0, 0, 255); /* Color azul */
+    position: absolute;
+    top: 135%;
+    left: 75%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#iced_coffee:hover,
+#frappuccino:hover,
+#iced_mocha:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+#chocolate_Pancakes {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 25%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Verde */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#pancakes_milk {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Verde */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#Caramelized_Pancakes {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 75%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Verde */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#chocolate_Pancakes:hover,
+#pancakes_milk:hover,
+#Caramelized_Pancakes:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+#wafle_chocolate {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 25%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #aaff00; /* Verde */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#wafle_manzana {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #bfff00; /* Verde */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#wafle_cafe {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    top: 135%;
+    left: 75%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #b3ff00; /* Verde */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+#wafle_chocolate:hover,
+#wafle_manzana:hover,
+#wafle_cafe:hover {
+    transform: scale(1.1);
+}
+
+#about{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 18, 18);
+    top: 200%;
+}
+#contact{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 18, 18);
+    top: 300%;
+}
+
+.quienes {
+    position: absolute;
+    font-size: 350%;
+    top: 220%;
+    left: -3%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    top: 217%;
+}
+
+.lineas_about {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+
+.lineas_about:nth-child(1) {
+    top: 215%;
+}
+
+.lineas_about:nth-child(2) {
+    top: 225%;
+}
+
+.about_section{
+    position: absolute;
+    top: 228%;
+    width: 98%;
+    font-size: 150%;
+    left: 1.5%;
+}
+
+#contact{
+    position: absolute;
+    width: 100%;
+    background: none;
+    top: 390%;
+}
